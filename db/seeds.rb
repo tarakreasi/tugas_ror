@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-AdminUser.create!(email: 'ajarsinau@gmail.com', password: 'bismillah12', password_confirmation: 'bismillah12') unless AdminUser.exists?(email: 'ajarsinau@gmail.com')
+AdminUser.create!(email: ENV.fetch('ADMIN_EMAIL', 'admin@example.com'), password: ENV.fetch('ADMIN_PASSWORD', 'password'), password_confirmation: ENV.fetch('ADMIN_PASSWORD', 'password')) unless AdminUser.exists?(email: ENV.fetch('ADMIN_EMAIL', 'admin@example.com'))
 
 course = Course.find_or_create_by!(title: "Ruby on Rails untuk Pemula") do |c|
   c.description = "Kursus ini akan mengajarkan Anda dasar-dasar Ruby on Rails dari awal hingga mahir."

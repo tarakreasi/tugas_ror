@@ -46,7 +46,14 @@ Meskipun merupakan proyek belajar, aplikasi ini telah disesuaikan agar tetap rel
    ```bash
    bundle install
    ```
-2. **Setup Database**:
+2. **Konfigurasi Environment Variable**:
+   Salin file konfigurasi sampel dan sesuaikan dengan kredensial Anda:
+   ```bash
+   cp config/application.yml.sample config/application.yml
+   ```
+   Pastikan `config/application.yml` berisi kredensial yang valid (Cloudinary, Admin, dll).
+
+3. **Setup Database**:
    ```bash
    bundle exec rake db:setup
    ```

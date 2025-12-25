@@ -1,0 +1,8 @@
+# Admin Credential Defaults
+ADMIN_EMAIL: 'ajarsinau@gmail.com'
+ADMIN_PASSWORD: 'changeme'
+
+# Cloudinary Configuration
+CLOUDINARY_CLOUD_NAME: 'your_cloud_name'
+CLOUDINARY_API_KEY: 'your_api_key'
+CLOUDINARY_API_SECRET: 'your_api_secret'
