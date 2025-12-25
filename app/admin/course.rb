@@ -8,7 +8,7 @@ ActiveAdmin.register Course do
 		def create
 			@course = Course.new(permitted_params[:course])
 			if @course.save
-				ActionCable.server.broadcast('course_list', course: CoursesController.render(partial: 'courses/course', locals: {course: @course}).html_safe)
+				ActionCable.server.broadcast('course_list', { course: CoursesController.render(partial: 'courses/course', locals: { course: @course }) })
 				redirect_to admin_course_path(@course), notice: "Course successfully create."
 			else
 				render :new

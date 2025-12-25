@@ -3,15 +3,13 @@
 one:
   title: Course One
   description: MyText
-  price:
-  status: MyString
-  image: MyString
+  price: 50.0
+  status: Active
   slug: course-one
 
 two:
   title: Course Two
   description: MyText
-  price:
-  status: MyString
-  image: MyString
+  price: 75.0
+  status: Active
   slug: course-two

@@ -11,7 +11,7 @@
 			</div>
 			<div class="card-action center">
 			 <% if user_signed_in? && current_user.has_course?(@course)%>
-				 	<%= link_to @course do %>
+				 	<%= link_to course_task_path(@course, @tasks.first) do %>
 						<button class="btn waves-effect waves-light green darken-2">
 							Lihat Course ini
 						</button>

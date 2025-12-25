@@ -21,3 +21,7 @@
 # Ignore application configuration
 /config/application.yml
 /public/system/*
+*.sqlite3
+/coverage
+/vendor/bundle
+.DS_Store

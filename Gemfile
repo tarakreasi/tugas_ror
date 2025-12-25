@@ -7,9 +7,9 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.1'
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
+gem 'rails', '~> 6.0.0'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -60,13 +60,13 @@ gem 'jquery-ui-rails'
 gem 'figaro'
 gem 'omniauth-facebook'
 gem 'toastr-rails'
-gem 'activeadmin'
+gem 'activeadmin', '~> 2.9'
 gem 'active_skin'
 #gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'validate_url'
-gem 'cancancan', '~> 2.0'
+gem 'cancancan', '~> 3.0'
 gem 'friendly_id', '~> 5.1.0'
 
 gem 'simplecov', :require => false, :group => :test

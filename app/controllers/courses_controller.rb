@@ -39,7 +39,7 @@ class CoursesController < ApplicationController
        end
      end
     respond_to do |format|
-      format.html {render text:"ok"}
+      format.html {render plain: "ok"}
     end
   end
 end
